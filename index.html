@@ -75,21 +75,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 <!-- Bubble Trigger -->
-<div id="chat-toggle" class="fixed bottom-6 right-6 bg-blue-500 text-white rounded-full p-4 cursor-pointer shadow-lg hover:bg-blue-600">
-  💬
-</div>
 
-<!-- Chat Box -->
-<div id="chat-box" class="fixed bottom-20 right-6 w-80 bg-white border border-gray-300 rounded-lg shadow-lg hidden flex flex-col">
-  <div class="bg-blue-500 text-white px-4 py-2 rounded-t-lg">
-    Venice AI Chat
-  </div>
-  <div id="messages" class="flex-1 p-4 overflow-y-auto space-y-2 h-64"></div>
-  <div class="flex border-t p-2">
-    <input id="user-input" type="text" placeholder="Tulis pesan..." class="flex-1 border border-gray-300 rounded px-2 py-1 mr-2" />
-    <button onclick="sendMessage()" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Kirim</button>
-  </div>
-</div>
 
     <header class="fixed top-0 left-0 right-0 bg-white bg-opacity-95 navbar-shadow z-50 py-4 px-6 md:px-12">
         <nav class="container mx-auto flex justify-between items-center">
@@ -282,7 +268,21 @@
             <p class="mt-2 text-sm">Dibuat dengan Cinta dan semangat untuk kuliner Indonesia.</p>
         </div>
     </footer>
+<div id="chat-toggle" class="fixed bottom-6 right-6 bg-blue-500 text-white rounded-full p-4 cursor-pointer shadow-lg hover:bg-blue-600">
+  💬
+</div>
 
+<!-- Chat Box -->
+<div id="chat-box" class="fixed bottom-20 right-6 w-80 bg-white border border-gray-300 rounded-lg shadow-lg hidden flex flex-col">
+  <div class="bg-blue-500 text-white px-4 py-2 rounded-t-lg">
+    Venice AI Chat
+  </div>
+  <div id="messages" class="flex-1 p-4 overflow-y-auto space-y-2 h-64"></div>
+  <div class="flex border-t p-2">
+    <input id="user-input" type="text" placeholder="Tulis pesan..." class="flex-1 border border-gray-300 rounded px-2 py-1 mr-2" />
+    <button onclick="sendMessage()" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Kirim</button>
+  </div>
+</div>
     <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[100] hidden animate-fade-in">
         <div class="bg-white rounded-lg shadow-2xl p-6 md:p-8 w-11/12 md:w-2/3 lg:w-1/2 xl:w-2/5 relative animate-scale-in max-h-[90vh] flex flex-col">
             <button id="close-cart-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold focus:outline-none">&times;</button>
