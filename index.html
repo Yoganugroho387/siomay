@@ -74,6 +74,22 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
+<!-- Bubble Trigger -->
+<div id="chat-toggle" class="fixed bottom-6 right-6 bg-blue-500 text-white rounded-full p-4 cursor-pointer shadow-lg hover:bg-blue-600">
+  💬
+</div>
+
+<!-- Chat Box -->
+<div id="chat-box" class="fixed bottom-20 right-6 w-80 bg-white border border-gray-300 rounded-lg shadow-lg hidden flex flex-col">
+  <div class="bg-blue-500 text-white px-4 py-2 rounded-t-lg">
+    Venice AI Chat
+  </div>
+  <div id="messages" class="flex-1 p-4 overflow-y-auto space-y-2 h-64"></div>
+  <div class="flex border-t p-2">
+    <input id="user-input" type="text" placeholder="Tulis pesan..." class="flex-1 border border-gray-300 rounded px-2 py-1 mr-2" />
+    <button onclick="sendMessage()" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Kirim</button>
+  </div>
+</div>
 
     <header class="fixed top-0 left-0 right-0 bg-white bg-opacity-95 navbar-shadow z-50 py-4 px-6 md:px-12">
         <nav class="container mx-auto flex justify-between items-center">
@@ -331,22 +347,6 @@
             }
         }
     </style>
-<!-- Bubble Trigger -->
-<div id="chat-toggle" class="fixed bottom-6 right-6 bg-blue-500 text-white rounded-full p-4 cursor-pointer shadow-lg hover:bg-blue-600">
-  💬
-</div>
-
-<!-- Chat Box -->
-<div id="chat-box" class="fixed bottom-20 right-6 w-80 bg-white border border-gray-300 rounded-lg shadow-lg hidden flex flex-col">
-  <div class="bg-blue-500 text-white px-4 py-2 rounded-t-lg">
-    Yoga AI Chat
-  </div>
-  <div id="messages" class="flex-1 p-4 overflow-y-auto space-y-2 h-64"></div>
-  <div class="flex border-t p-2">
-    <input id="user-input" type="text" placeholder="Tulis pesan..." class="flex-1 border border-gray-300 rounded px-2 py-1 mr-2" />
-    <button onclick="sendMessage()" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Kirim</button>
-  </div>
-</div>
 
     <script>
         // JavaScript for Cart Functionality and Animations
